@@ -1,0 +1,29 @@
+name: VerticalDimensions
+version: '1.4-beta'
+main: getsweet.verticaldimensions.Main
+api-version: '1.21'
+prefix: '§bVertical§3Dimensions§r'
+description: |
+  §a✦ Plugin connecting worlds §6✦§r
+  §7Created by a YouTuber server player COR VacMakac§r
+authors: [ GetSweet, VacMakac ]
+website: https://getsweet.fun
+load: STARTUP
+commands:
+  vd:
+    description: Основная команда плагина
+    aliases: [verticaldimensions, vdim]
+  vd reload:
+    description: Перезагрузить конфигурацию
+permissions:
+  verticaldimensions.*:
+    description: Все права плагина
+    children:
+      verticaldimensions.reload: true
+      verticaldimensions.info: true
+  verticaldimensions.reload:
+    description: Право на перезагрузку конфига
+    default: op
+  verticaldimensions.info:
+    description: Право на просмотр информации
+    default: true

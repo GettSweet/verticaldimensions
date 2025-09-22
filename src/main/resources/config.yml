@@ -1,0 +1,78 @@
+# Настройки миров
+worlds:
+  overworld: world
+  nether: world_nether
+  end: world_the_end
+
+# Настройки высот для телепортации
+heights:
+  end_to_overworld: -55.0
+  nether_to_overworld: 1000.0
+  overworld_to_nether: -90.0
+  overworld_to_end: 2000.0
+
+# Эффекты при обычной телепортации можно добавлять свои или убирать (Если что уровень "0" это "1" это прикол майна)
+effects:
+  slowness:
+    duration: 2400
+    amplifier: 3
+  weakness:
+    duration: 24000
+    amplifier: 9
+  blindness:
+    duration: 3600
+    amplifier: 0
+  nausea:
+    duration: 6000
+    amplifier: 0
+  slow_falling:
+    duration: 1000
+    amplifier: 0
+
+# Настройки порталов
+nether_portal:
+  prevent_entry: true
+  prevent_ender_pearl: true
+  prevent_vehicle_with_player: true
+
+# Координаты телепортации
+teleport_y:
+  overworld: 500.0
+  nether: 500.0
+  end: 70.0
+
+# Эффекты при телепортации в Энд
+effects_end:
+  slowness:
+    duration: 2400
+    amplifier: 3
+  weakness:
+    duration: 24000
+    amplifier: 9
+  blindness:
+    duration: 1200
+    amplifier: 0
+  slow_falling:
+    duration: 1000
+    amplifier: 0
+
+# Настройки порталов
+portal_restrictions:
+  prevent_nether_entry: true
+  prevent_end_entry: true
+  prevent_nether_to_end: true
+  prevent_end_to_nether: true
+  prevent_ender_pearl_nether: true
+  prevent_ender_pearl_end: true
+  prevent_vehicle_nether: true
+  prevent_vehicle_end: true
+  enable_messages: true
+
+# Настройки сообщений
+messages:
+  portal_blocked: "§cПортал в ад заблокирован! Используйте вертикальную телепортацию."
+  end_portal_blocked: "§cПортал в Энд заблокирован! Используйте вертикальную телепортацию."
+  nether_to_end_blocked: "§cПортал из ада в Энд заблокирован!"
+  end_to_nether_blocked: "§cПортал из Энда в ад заблокирован!"
+  vehicle_blocked: "§cТранспорт не может пройти через портал в ад!"
+  vehicle_end_blocked: "§cТранспорт не может пройти через портал в Энд!"
